@@ -13,16 +13,18 @@ body {
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
   line-height: 1.6;
-  color: var(--color-dark);
-  background-color: var(--color-light);
+  background-color: var(--color-bg-dark);
+  color: var(--color-light);
 }
 
 /* Variables */
 :root {
-  --color-primary: #99D9D9;
-  --color-secondary: #68A2B9;
-  --color-light: #F2F0E9;
-  --color-dark: #231F20;
+  --color-primary: #00A99D; /* Restaurado */
+  --color-secondary: #007A73; /* Restaurado */
+  --color-light: #FFFFFF; /* Texto claro */
+  --color-dark: #1B1B1B; /* Texto oscuro con alto contraste */
+  --color-bg-dark: #001628; /* Restaurado */
+  --color-bg-light: #FAFAFA; /* Restaurado */
   --color-bluegreen: #5BB0BC;
   --color-brown: #736C52;
   --color-bg-dark: #001628;
@@ -108,16 +110,9 @@ section {
   color: var(--color-bg-dark);
 }
 
-/* Typography */
-h1 {
-  font-size: 3rem;
-  font-weight: bold;
-  color: var(--color-primary);
-}
-
-h2 {
-  font-size: 2.5rem;
-  color: var(--color-secondary);
+h1, h2, h3 {
+  color: var(--color-light);
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 p {
@@ -125,6 +120,10 @@ p {
   color: var(--color-dark);
   max-width: 800px;
   margin: auto;
+}
+.text-light {
+  color: var(--color-light) !important;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
 }
 
 /* Image Styling */
@@ -169,5 +168,15 @@ img:hover {
   .navbar ul {
     flex-direction: column;
     gap: 10px;
+  }
+
+  .title {
+    font-size: 2.8rem;
+    font-weight: bold;
+    color: var(--color-light);
+  }
+
+  body.scroll-y-none {
+    background-color: var(--color-bg-dark);
   }
 }
