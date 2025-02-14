@@ -117,7 +117,7 @@ h1, h2, h3 {
 
 p {
   font-size: 1.2rem;
-  color: var(--color-dark);
+  color: var(--color-light);
   max-width: 800px;
   margin: auto;
 }
