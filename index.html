@@ -8,27 +8,59 @@
     <!-- Meta Descripción para SEO -->
     <meta name="description" content="Descubre Royal Family Farming, una comunidad comprometida con la agricultura sostenible, innovación y calidad. Síguenos en redes sociales para más información.">
 
+    <!-- Favicon -->
     <link rel="shortcut icon" href="assets/crown_logo_white.png" id="favicon" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&amp;display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://site-assets.fontawesome.com/releases/v6.1.0/css/all.css"
-    />
-    <link rel="stylesheet" href="css/styles.css" />
-    <link href="plugins/aos/aos.css" rel="stylesheet" />
-    <link rel="stylesheet" href="plugins/fullPage.js-msater/fullpage.min.css" />
+
+    <!-- Preload Google Fonts -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap">
+    </noscript>
+
+    <!-- Preload FontAwesome -->
+    <link rel="preload" href="https://site-assets.fontawesome.com/releases/v6.1.0/css/all.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+      <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.1.0/css/all.css">
+    </noscript>
+
+    <!-- Preload CSS principal -->
+    <link rel="preload" href="css/styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+      <link rel="stylesheet" href="css/styles.css">
+    </noscript>
+
+    <!-- Preload Plugins -->
+    <link rel="preload" href="plugins/aos/aos.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+      <link rel="stylesheet" href="plugins/aos/aos.css">
+    </noscript>
+
+    <link rel="preload" href="plugins/fullPage.js-msater/fullpage.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+      <link rel="stylesheet" href="plugins/fullPage.js-msater/fullpage.min.css">
+    </noscript>
+
+    <!-- Preload Imagen para mejorar LCP -->
+    <link rel="preload" href="assets/crown_logo.png" as="image">
+
+    <!-- CSS Crítico en línea para mejorar el rendimiento -->
+    <style>
+      body {
+        font-family: 'Roboto', sans-serif;
+        background-color: var(--color-bg-dark);
+        color: var(--color-light);
+      }
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+    </style>
 
     <title>ReGeneration</title>
   </head>
+
   <body class="scroll-y-none">
     <span class="d-none" id="span_icon">
       <a href="#">
